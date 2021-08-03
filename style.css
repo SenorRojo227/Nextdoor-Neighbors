@@ -1,0 +1,33 @@
+body {
+	margin: 0;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    text-align: center;
+    font-weight: bold;
+    background-color: hsl(168, 100%, 25%);
+    color: white;
+}
+
+nav div {
+    display: inline-block;
+    line-height: 50px;
+    font-size: 24px;
+	flex: 0 1 25%;
+    transition: background 1s;
+}
+
+nav div:hover {
+    background-color: hsl(168, 50%, 25%);
+}
+
+
+nav a {
+    font-size: 18px;
+    text-decoration: none;
+    transition: background-color 1s;
+}
