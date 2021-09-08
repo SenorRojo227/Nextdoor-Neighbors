@@ -1,6 +1,35 @@
+/* Colors
+    - Green: hsl(107, 100%, 25%)
+    - Brown: hsl(37, 80%, 25%)
+*/
+
 body {
 	margin: 0;
 	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: hsla(107, 100%, 25%, 0.1);
+}
+
+header {
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 1), rgba(100, 255, 100, 0)), url("resources/Grass.png");
+    background-size: 100% 100%;
+    color: hsl(107, 100%, 25%);
+    display: flex;
+    align-items: center;
+}
+
+header img {
+    max-width: 5%;
+    margin: 25px;
+    padding: 15px;
+    
+}
+
+header h1 {
+    display: inline-block;
+    color:hsl(107, 100%, 25%);
+    font-size: 36px;
+    line-height: 50px;
+    height: 50px;
 }
 
 nav {
@@ -9,12 +38,13 @@ nav {
     justify-content: space-evenly;
     text-align: center;
     font-weight: bold;
-    background-color: hsl(168, 100%, 25%);
+    background-color: hsl(107, 100%, 25%);
     color: white;
 }
 
 nav div {
     display: inline-block;
+    font-size: 14px;
     line-height: 50px;
     font-size: 24px;
 	flex: 0 1 25%;
@@ -22,12 +52,24 @@ nav div {
 }
 
 nav div:hover {
-    background-color: hsl(168, 50%, 25%);
+    background-color: hsl(107, 100%, 25%);
 }
 
 
-nav a {
-    font-size: 18px;
-    text-decoration: none;
-    transition: background-color 1s;
+main {
+    margin: 50px 150px;
+    text-align: center;
+}
+
+main h2 {
+    color:hsl(107, 100%, 25%);
+}
+
+main p {
+    padding: 25px 0px;
+}
+
+main img {
+    max-width: 50%;
+    max-height: 50%;
 }
